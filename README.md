@@ -1,112 +1,129 @@
-# Diprol Química • Landing Page Institucional & Comercial B2B
+<div align="center">
 
-> **Obra-prima visual, tecnológica e de alta performance** para a **Diprol Química** — fabricante e distribuidora de saneantes profissionais e produtos químicos industriais especiais no Vale do Paraíba, Litoral Norte e região.
+# 🧪 DIPROL QUÍMICA INDUSTRIAL
+### *Tradição & Confiança em Higiene Profissional e Química Especializada*
 
-![Diprol Química Banner](public/favicon.svg)
+[![React 19](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-6.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-8.2-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Three.js](https://img.shields.io/badge/Three.js-WebGL-000000?style=for-the-badge&logo=three.js&logoColor=white)](https://threejs.org/)
+[![GSAP 3](https://img.shields.io/badge/GSAP-ScrollTrigger-88CE02?style=for-the-badge&logo=greensock&logoColor=white)](https://greensock.com/gsap/)
+[![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS-v4.3-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+
+<br />
+
+> **Landing Page Institucional & Comercial B2B de Alto Impacto** desenvolvida para a **Diprol Química**, referência em fabricação e distribuição de saneantes especiais e produtos químicos para a indústria no **Vale do Paraíba, Litoral Norte e Região**.
+
+[Visão Geral](#-visão-geral) • [Recursos & Destaques](#-recursos--destaques) • [Arquitetura](#-arquitetura-do-projeto) • [Stack Tecnológica](#-stack-tecnológica) • [Instalação](#-como-executar) • [Deploy & Segurança](#-segurança--deploy)
+
+</div>
 
 ---
 
-## 🔬 Visão Geral do Projeto
+## 🌟 Visão Geral
 
-A landing page foi desenvolvida para posicionar a Diprol Química como a maior referência em química de alta performance e economia operacional para a indústria B2B. A interface combina **estética pura e translúcida (glassmorphism)** com **simulação molecular WebGL 3D em tempo real** e **animações fluidas a 60 FPS**.
+A plataforma foi concebida sob o conceito de **Creative Technology**, aliando rigor técnico da engenharia química com estética moderna e translúcida (*Glassmorphism*). O projeto conta com:
+- **Cena 3D interativa em WebGL (Three.js)** simulando clusters moleculares, refração óptica e partículas em suspensão que reagem ao mouse e scroll.
+- **Smooth Scroll (Lenis)** perfeitamente acoplado ao ciclo de animações do **GSAP + ScrollTrigger** a estáveis 60 FPS.
+- **Micro-interações físicas:** Botões com atração magnética (`gsap.quickTo`) e cards com efeito 3D Tilt por coordenadas de cursor.
+- **Simulador de Economia B2B:** Cálculo de redução de custos operacionais com dosadores eletrônicos em comodato e ponte direta com WhatsApp corporativo.
 
 ---
 
-## ⚡ Stack Tecnológica & Engenharia
+## 🚀 Recursos & Destaques das Dobras
 
-| Camada | Tecnologia | Propósito / Benefício |
+```mermaid
+graph TD
+    A[Preloader Molecular 0-100%] --> B[Hero 3D WebGL + CTAs Magnéticos]
+    B --> C[Quem Somos: Métricas de Autoridade +25 Anos]
+    C --> D[Segmentos: 5 Pilares Industriais + Modal Técnico]
+    D --> E[Diferenciais: Fabricação, Consultoria & Logística]
+    E --> F[Engenharia Química: Timeline de Diluição Sob Medida]
+    F --> G[Prova Social: Marquee Infinito & Depoimentos]
+    G --> H[Simulador B2B & Formulário Sanitizado LGPD]
+    H --> I[Rodapé: Raio de Atendimento Dutra & Litoral]
+```
+
+### 🔬 Dobras Implementadas:
+1. **0. Preloader Molecular:** Animação de síntese química com contador percentual progressivo (0 → 100%) e transição fluida de abertura.
+2. **1. Hero Interativa (Tradição & Confiança):** Canvas WebGL 3D em tempo real, tipografia *Outfit/Plus Jakarta Sans*, badges notificados ANVISA e CTAs magnéticos.
+3. **2. Quem Somos / Autoridade:** Roll-up numérico animado (+25 anos de mercado, 12.000 ton/ano, +650 clientes corporativos e responsabilidade técnica CRQ-IV).
+4. **3. Segmentos de Atuação:** 
+   - 🍏 **Alimentícia & Frigoríficos:** Sanitizantes CIP e detergentes com laudos bactericidas.
+   - 👔 **Lavanderia Industrial & Hospitalar:** Branqueamento termoquímico e conservação de enxoval.
+   - 🚗 **Automotiva & Frotas:** Desengraxantes biodegradáveis e shampoos técnicos.
+   - ⚙️ **Metalúrgica & Usinagem:** Desengraxe pós-usinagem, fosfatização e proteção anticorrosiva.
+   - 🏢 **Institucional & Clínicas:** Desinfetantes hospitalares de 5ª geração e ceras de alto tráfego.
+5. **4. Diferenciais Competitivos:** Cards em sequência (*stagger*) destacando fabricação própria, consultoria presencial in-loco em até 24h e frota dedicada.
+6. **5. Engenharia de Soluções:** Timeline interativa das 4 etapas de implementação (Diagnóstico, Formulação Customizada, Comodato de Dosadores e Economia de até 40%).
+7. **6. Prova Social & Marquee:** Faixa contínua infinita de clientes e parceiros industriais + depoimentos de gerentes de compras e planta industrial.
+8. **7. Formulário de Cotação B2B:** Formulário com validação em tempo real, sanitização de inputs contra ataques XSS, consentimento LGPD e disparo de confetes com link direto para WhatsApp.
+9. **8. Rodapé & Cobertura Regional:** Mapa com raio de atendimento no Vale do Paraíba (SJC, Taubaté, Jacareí, Pinda, Guaratinguetá, Litoral) e canal WhatsApp flutuante.
+
+---
+
+## 🛠️ Stack Tecnológica
+
+| Camada | Tecnologia | Função no Projeto |
 | :--- | :--- | :--- |
-| **Framework & Core** | **React 19 + TypeScript 6** | Modularidade, tipagem estrita e arquitetura SOLID |
-| **Build Tool** | **Vite 8** | Compilação ultra-rápida (HMR instantâneo e bundle otimizado) |
-| **3D & WebGL** | **Three.js** | Simulação interativa de rede molecular e dispersão química a 60 FPS |
-| **Animações** | **GSAP 3 + ScrollTrigger** | Reveals em timeline, counters numéricos e efeito magnético nos botões |
-| **Smooth Scroll** | **Lenis** | Rolagem suave sincronizada ao ticker do GSAP e física natural |
-| **Estilização** | **Tailwind CSS v4** | Design tokens centralizados, glassmorphism e efeitos de refração |
-| **Ícones** | **Lucide React** | Conjunto moderno de ícones vetoriais de alta precisão |
-| **Micro-interações** | **Canvas-Confetti** | Feedback visual de celebração no simulador de economia B2B |
+| **Frontend UI** | `React 19` + `TypeScript 6` | Componentes declarativos e arquitetura modular tipada |
+| **Estilização** | `Tailwind CSS v4` | Tokens visuais, filtros de backdrop e utilitários modernos |
+| **Renderização 3D** | `Three.js` + `WebGL` | Cluster molecular 3D, materiais físicos e dispersão reativa |
+| **Animações** | `GSAP 3` + `ScrollTrigger` | Timelines, reveals, contadores e física magnética nos botões |
+| **Smooth Scroll** | `Lenis` | Rolagem inercial suave sincronizada ao ticker do GSAP |
+| **Ícones** | `Lucide React` | Ícones vetoriais de precisão técnica |
+| **Micro-efeitos** | `Canvas-Confetti` | Celebração visual no envio do simulador de orçamento |
+| **Bundle & Build** | `Vite 8` | Compilação ultrarrápida com divisão estratégica de chunks |
 
 ---
 
-## 🏛️ Arquitetura de Software & Princípios
-
-- **SOLID:** Separação estrita de responsabilidades:
-  - `src/components/3d/`: Lógica e ciclo de vida isolado de renderização WebGL Three.js.
-  - `src/hooks/`: Hooks reutilizáveis para Smooth Scroll (`useLenis`), Detecção de Acessibilidade (`useReducedMotion`) e Rastreamento de Cursor (`useMousePosition`).
-  - `src/utils/`: Funções puras de sanitização (`sanitizer.ts`) e validação de formulários B2B.
-  - `src/data/`: Datasets isolados e tipados (`segmentsData.ts`, `metricsData.ts`, `testimonialsData.ts`).
-- **DRY:** Tokens de design centralizados em CSS variables e componentes modulares (`GlassCard`, `MagneticButton`, `SectionHeading`, `Counter`).
-- **KISS & YAGNI:** Sem bibliotecas pesadas de estado global desnecessárias; foco em componentes declarativos rápidos e leves.
-- **Limpeza de Memória (Cleanup):**
-  - Descarte rigoroso de geometrias e materiais WebGL via método `.dispose()` no `useEffect`.
-  - Contextos do GSAP revertidos com `ctx.revert()` na desmontagem.
-
----
-
-## 🔒 Segurança, Sanitização & LGPD
-
-1. **Sanitização de Inputs:** Tratamento contra XSS e injeção de scripts no formulário de orçamento.
-2. **Máscara & Validação de Contato:** Formatação automática de DDD e números de WhatsApp (DDD 12 e nacional).
-3. **Segurança de Links:** Todos os links externos e CTAs para WhatsApp utilizam `rel="noopener noreferrer"`.
-4. **Conformidade LGPD:** Checkbox explícito de consentimento e termos de proteção de dados para cotações comerciais.
-5. **Headers de Segurança Recomendados (Nginx / Vercel / Netlify):**
-   - `Content-Security-Policy`
-   - `X-Frame-Options: DENY`
-   - `X-Content-Type-Options: nosniff`
-   - `Referrer-Policy: strict-origin-when-cross-origin`
-
----
-
-## 📂 Estrutura de Diretórios
+## 📐 Arquitetura do Projeto
 
 ```
 diprol-quimica/
 ├── public/
-│   └── favicon.svg                  # Brand icon vetorial com hexágono molecular
+│   └── favicon.svg                     # Identidade visual com hexágono molecular e gota
 ├── src/
 │   ├── components/
 │   │   ├── 3d/
-│   │   │   ├── ChemicalHeroScene.tsx # Cena 3D Three.js com partículas e moléculas
-│   │   │   └── LiquidBackgroundMesh.tsx # Malha de fluidez líquida ambiente
+│   │   │   ├── ChemicalHeroScene.tsx   # Cena WebGL 3D Three.js com cleanup e dispose()
+│   │   │   └── LiquidBackgroundMesh.tsx # Malha de ondulação líquida sutil
 │   │   ├── common/
-│   │   │   ├── Counter.tsx          # Contador numérico GSAP ScrollTrigger
-│   │   │   ├── GlassCard.tsx        # Card translúcido com inclinação 3D ao passar o mouse
-│   │   │   ├── MagneticButton.tsx   # Botão magnético com GSAP quickTo
-│   │   │   ├── Navbar.tsx           # Header fixo com menu responsivo e contatos
-│   │   │   └── SectionHeading.tsx   # Título padrão com gradiente e badge
+│   │   │   ├── Counter.tsx             # Contador numérico GSAP ScrollTrigger
+│   │   │   ├── GlassCard.tsx           # Card translúcido com inclinação 3D ao passar mouse
+│   │   │   ├── MagneticButton.tsx      # Botão com atração magnética via GSAP quickTo
+│   │   │   ├── Navbar.tsx              # Header responsivo com navegação fluida
+│   │   │   └── SectionHeading.tsx      # Título padronizado com gradiente ciano e badge
 │   │   └── sections/
-│   │       ├── Preloader.tsx        # Loader molecular com contador 0-100%
-│   │       ├── HeroSection.tsx      # Dobra 1 com WebGL e CTAs magnéticos
-│   │       ├── AboutAuthoritySection.tsx # Dobra 2 com métricas de autoridade (+25 anos)
-│   │       ├── SegmentsSection.tsx  # Dobra 3 com 5 segmentos e modal de ficha técnica
-│   │       ├── DiferenciaisSection.tsx # Dobra 4 com 4 pilares industriais (stagger)
-│   │       ├── CustomEngineeringSection.tsx # Dobra 5 com timeline de redução de custos
-│   │       ├── SocialProofSection.tsx # Dobra 6 com marquee e depoimentos
-│   │       ├── QuoteCalculatorSection.tsx # Dobra 7 com simulador B2B e formulário
-│   │       ├── FooterSection.tsx    # Dobra 8 com mapa de cidades do Vale e conformidade
-│   │       └── FloatingWhatsApp.tsx # Botão flutuante com balão de consultor
-│   ├── data/                        # Dados estáticos tipados dos produtos e clientes
-│   ├── hooks/                       # Hooks personalizados (Lenis, ReducedMotion, Mouse)
-│   ├── types/                       # Tipagens TypeScript estritas
-│   ├── utils/                       # Sanitização, máscaras e validação
-│   ├── App.tsx                      # Componente raiz da aplicação
-│   ├── index.css                    # Design system Tailwind v4 & Glassmorphism
-│   └── main.tsx                     # Entry point React
-├── index.html                       # HTML5 com fontes Google e metadados SEO
-├── package.json                     # Dependências e scripts do projeto
-├── tsconfig.json                    # Configuração TypeScript
-└── vite.config.ts                   # Configuração do Vite com chunk splitting
+│   │       ├── Preloader.tsx           # Dobra 0: Preloader molecular com contador 0-100%
+│   │       ├── HeroSection.tsx         # Dobra 1: Hero com split-text e badges ANVISA
+│   │       ├── AboutAuthoritySection.tsx # Dobra 2: Autoridade com contadores
+│   │       ├── SegmentsSection.tsx     # Dobra 3: 5 Segmentos industriais e modal técnico
+│   │       ├── DiferenciaisSection.tsx # Dobra 4: 4 Pilares competitivos em stagger
+│   │       ├── CustomEngineeringSection.tsx # Dobra 5: Timeline de redução de custos
+│   │       ├── SocialProofSection.tsx  # Dobra 6: Marquee contínuo e depoimentos
+│   │       ├── QuoteCalculatorSection.tsx # Dobra 7: Simulador B2B e form sanitizado
+│   │       ├── FooterSection.tsx       # Dobra 8: Logística no Vale do Paraíba
+│   │       └── FloatingWhatsApp.tsx    # Botão flutuante inteligente de WhatsApp
+│   ├── data/                           # Datasets tipados de produtos, métricas e clientes
+│   ├── hooks/                          # Hooks para Lenis, Reduced Motion e Mouse Position
+│   ├── types/                          # Interfaces TypeScript estritas
+│   ├── utils/                          # Sanitização contra XSS, máscaras e validação
+│   ├── App.tsx                         # Orquestrador da aplicação
+│   ├── index.css                       # Design tokens, glassmorphism e animações
+│   └── main.tsx                        # Entry point React
+├── index.html                          # SEO, metadados OpenGraph e fontes Google
+├── package.json                        # Dependências e scripts
+└── vite.config.ts                      # Configuração com chunk splitting otimizado
 ```
 
 ---
 
-## 🚀 Como Executar Localmente
+## 💻 Como Executar Localmente
 
-### Pré-requisitos
-- **Node.js:** versão 18 ou superior (recomendado Node 20+)
-- **NPM** ou **Yarn** ou **PNPM**
-
-### 1. Clonar ou Acessar a Pasta
+### 1. Clonar o Repositório
 ```bash
+git clone git@github.com:luscanascimento/diprol-quimica.git
 cd diprol-quimica
 ```
 
@@ -115,71 +132,41 @@ cd diprol-quimica
 npm install
 ```
 
-### 3. Rodar em Modo de Desenvolvimento
+### 3. Rodar em Ambiente de Desenvolvimento
 ```bash
 npm run dev
 ```
-O servidor de desenvolvimento estará disponível em `http://localhost:5173`.
+Abra [http://localhost:5173](http://localhost:5173) no seu navegador.
 
 ### 4. Build de Produção
 ```bash
 npm run build
 ```
-Os arquivos estáticos otimizados serão gerados no diretório `dist/`.
+Os arquivos otimizados serão gerados na pasta `dist/`.
 
-### 5. Pré-visualizar o Build
+### 5. Checagem de Lint
 ```bash
-npm run preview
+npm run lint
 ```
 
 ---
 
-## 🌐 Implantação em Produção (Deploy)
+## 🛡️ Segurança & Boas Práticas
 
-### Vercel / Netlify
-Basta conectar o repositório Git e utilizar as configurações padrão:
-- **Build Command:** `npm run build`
-- **Output Directory:** `dist`
-
-### Servidor Nginx (Exemplo de Configuração com Headers de Segurança)
-```nginx
-server {
-    listen 80;
-    server_name diprolquimica.com.br www.diprolquimica.com.br;
-
-    root /var/www/diprol-quimica/dist;
-    index index.html;
-
-    # Gzip Compression
-    gzip on;
-    gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript image/svg+xml;
-
-    # Security Headers
-    add_header X-Frame-Options "DENY" always;
-    add_header X-Content-Type-Options "nosniff" always;
-    add_header Referrer-Policy "strict-origin-when-cross-origin" always;
-    add_header Permissions-Policy "camera=(), microphone=(), geolocation=()" always;
-
-    location / {
-        try_files $uri $uri/ /index.html;
-    }
-
-    # Cache de Assets Estáticos
-    location ~* \.(js|css|png|jpg|jpeg|gif|svg|ico|woff2)$ {
-        expires 1y;
-        add_header Cache-Control "public, immutable";
-    }
-}
-```
+- **Sanitização de Inputs:** Proteção ativa contra injeção de HTML e ataques XSS em todos os campos de formulário.
+- **Links Externos Seguros:** Aplicação obrigatória de `rel="noopener noreferrer"`.
+- **Conformidade LGPD:** Caixa de seleção de consentimento transparente para uso de dados em propostas comerciais.
+- **Acessibilidade (a11y):** Detecção automática de `prefers-reduced-motion` no sistema operacional do usuário, desativando rotações 3D contínuas e suavizando transições para evitar fadiga visual.
+- **Performance 60 FPS:** Descarte rigoroso de texturas e geometrias (`dispose()`) no ciclo de vida do React para prevenir *memory leaks*.
 
 ---
 
-## 🏆 Conformidade Técnica & Acessibilidade
+## 👤 Autor
 
-- **Prefers-Reduced-Motion:** Quando o usuário possui redução de movimento ativada no sistema operacional, as rotações do WebGL 3D são pausadas e as transições do GSAP passam a ser instantâneas e suaves.
-- **Performance:** 60 FPS garantidos com WebGL rendering sob demanda e chunking do Three.js e GSAP.
-- **Rigor Técnico:** Informações fiéis ao mercado de saneantes (ANVISA, FISPQ, REBLAS, CRQ-IV e sistemas CIP).
+Desenvolvido com excelência técnica por **Lucas Nascimento** ([@luscanascimento](https://github.com/luscanascimento)).
 
 ---
 
-*Desenvolvido com excelência por Frontend & Creative Engineering.*
+<div align="center">
+  <sub>Diprol Química Industrial Ltda • Todos os direitos reservados.</sub>
+</div>
